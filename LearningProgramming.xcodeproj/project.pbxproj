@@ -1,0 +1,655 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9147752F2747B19000C6AB89 /* LearningProgrammingApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9147752E2747B19000C6AB89 /* LearningProgrammingApp.swift */; };
+		914775312747B19000C6AB89 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 914775302747B19000C6AB89 /* ContentView.swift */; };
+		914775332747B19500C6AB89 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 914775322747B19500C6AB89 /* Assets.xcassets */; };
+		914775362747B19500C6AB89 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 914775352747B19500C6AB89 /* Preview Assets.xcassets */; };
+		914775492747B45600C6AB89 /* LevelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 914775482747B45600C6AB89 /* LevelView.swift */; };
+		9147754B2747B4EC00C6AB89 /* Level.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9147754A2747B4EC00C6AB89 /* Level.swift */; };
+		9147754D2747B5BB00C6AB89 /* LevelViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9147754C2747B5BB00C6AB89 /* LevelViewModel.swift */; };
+		9147754F2747B95100C6AB89 /* LessonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9147754E2747B95100C6AB89 /* LessonView.swift */; };
+		914775522747BA5E00C6AB89 /* GlobalThings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 914775512747BA5E00C6AB89 /* GlobalThings.swift */; };
+		914775552747C7EC00C6AB89 /* CodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 914775542747C7EC00C6AB89 /* CodeView.swift */; };
+		9167B3002756B2B100CE03A2 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 9167B2FF2756B2B100CE03A2 /* FirebaseAuth */; };
+		9167B3022756B2B100CE03A2 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 9167B3012756B2B100CE03A2 /* FirebaseFirestore */; };
+		9167B3042756B2B100CE03A2 /* FirebaseFirestoreSwift-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = 9167B3032756B2B100CE03A2 /* FirebaseFirestoreSwift-Beta */; };
+		9167B3062756B2B100CE03A2 /* FirebaseFunctions in Frameworks */ = {isa = PBXBuildFile; productRef = 9167B3052756B2B100CE03A2 /* FirebaseFunctions */; };
+		9167B3082756B2B100CE03A2 /* FirebaseMessaging in Frameworks */ = {isa = PBXBuildFile; productRef = 9167B3072756B2B100CE03A2 /* FirebaseMessaging */; };
+		9167B30A2756B2B100CE03A2 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 9167B3092756B2B100CE03A2 /* FirebaseStorage */; };
+		9167B30C2756B67500CE03A2 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9167B30B2756B67500CE03A2 /* GoogleService-Info.plist */; };
+		9167B30F2757A46700CE03A2 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9167B30E2757A46700CE03A2 /* LoginView.swift */; };
+		9167B3112757A47700CE03A2 /* RegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9167B3102757A47700CE03A2 /* RegistrationView.swift */; };
+		9167B3132757A4C600CE03A2 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9167B3122757A4C600CE03A2 /* CustomTextField.swift */; };
+		9167B3152757A51600CE03A2 /* CustomSecureField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9167B3142757A51600CE03A2 /* CustomSecureField.swift */; };
+		9167B3172757A87B00CE03A2 /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9167B3162757A87B00CE03A2 /* AuthViewModel.swift */; };
+		9167B3192757A8BA00CE03A2 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9167B3182757A8BA00CE03A2 /* User.swift */; };
+		9167B31C2758C3DD00CE03A2 /* AddDataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9167B31B2758C3DD00CE03A2 /* AddDataView.swift */; };
+		9167B31E2758CBCB00CE03A2 /* CustomAddDataTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9167B31D2758CBCB00CE03A2 /* CustomAddDataTextField.swift */; };
+		9167B3202758CFC400CE03A2 /* Pickers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9167B31F2758CFC400CE03A2 /* Pickers.swift */; };
+		916EAC2F274BACF500E31C6B /* BlurView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 916EAC2E274BACF500E31C6B /* BlurView.swift */; };
+		9179F7FD274AD9C100E1B801 /* Lesson.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9179F7FC274AD9C100E1B801 /* Lesson.swift */; };
+		9179F7FF274AD9CA00E1B801 /* TopicsArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9179F7FE274AD9CA00E1B801 /* TopicsArray.swift */; };
+		9179F801274AD9E800E1B801 /* Topic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9179F800274AD9E800E1B801 /* Topic.swift */; };
+		9179F803274ADA0600E1B801 /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9179F802274ADA0600E1B801 /* Enums.swift */; };
+		9179F805274ADE5C00E1B801 /* MainScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9179F804274ADE5C00E1B801 /* MainScreen.swift */; };
+		9179F817274AE21B00E1B801 /* Sofia Pro Medium Italic Az.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9179F807274AE21B00E1B801 /* Sofia Pro Medium Italic Az.otf */; };
+		9179F818274AE21B00E1B801 /* Sofia Pro Black Italic Az.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9179F808274AE21B00E1B801 /* Sofia Pro Black Italic Az.otf */; };
+		9179F819274AE21B00E1B801 /* Sofia Pro Black Az.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9179F809274AE21B00E1B801 /* Sofia Pro Black Az.otf */; };
+		9179F81A274AE21B00E1B801 /* Sofia Pro Bold Italic Az.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9179F80A274AE21B00E1B801 /* Sofia Pro Bold Italic Az.otf */; };
+		9179F81B274AE21B00E1B801 /* Sofia Pro UltraLight Italic Az.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9179F80B274AE21B00E1B801 /* Sofia Pro UltraLight Italic Az.otf */; };
+		9179F81C274AE21B00E1B801 /* Sofia Pro Medium Az.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9179F80C274AE21B00E1B801 /* Sofia Pro Medium Az.otf */; };
+		9179F81D274AE21B00E1B801 /* Sofia Pro Bold Az.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9179F80D274AE21B00E1B801 /* Sofia Pro Bold Az.otf */; };
+		9179F81E274AE21B00E1B801 /* Sofia Pro ExtraLight Italic Az.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9179F80E274AE21B00E1B801 /* Sofia Pro ExtraLight Italic Az.otf */; };
+		9179F81F274AE21B00E1B801 /* Sofia Pro Regular Italic Az.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9179F80F274AE21B00E1B801 /* Sofia Pro Regular Italic Az.otf */; };
+		9179F820274AE21B00E1B801 /* Sofia Pro Regular Az.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9179F810274AE21B00E1B801 /* Sofia Pro Regular Az.otf */; };
+		9179F821274AE21B00E1B801 /* Sofia Pro Semi Bold Italic Az.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9179F811274AE21B00E1B801 /* Sofia Pro Semi Bold Italic Az.otf */; };
+		9179F822274AE21B00E1B801 /* Sofia Pro UltraLight Az.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9179F812274AE21B00E1B801 /* Sofia Pro UltraLight Az.otf */; };
+		9179F823274AE21B00E1B801 /* Sofia Pro Semi Bold Az.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9179F813274AE21B00E1B801 /* Sofia Pro Semi Bold Az.otf */; };
+		9179F824274AE21B00E1B801 /* Sofia Pro ExtraLight Az.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9179F814274AE21B00E1B801 /* Sofia Pro ExtraLight Az.otf */; };
+		9179F825274AE21B00E1B801 /* Sofia Pro Light Italic Az.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9179F815274AE21B00E1B801 /* Sofia Pro Light Italic Az.otf */; };
+		9179F826274AE21B00E1B801 /* Sofia Pro Light Az.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9179F816274AE21B00E1B801 /* Sofia Pro Light Az.otf */; };
+		9188CA97274C29A30095CCB5 /* Answer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9188CA96274C29A20095CCB5 /* Answer.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		9147752B2747B19000C6AB89 /* LearningProgramming.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LearningProgramming.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9147752E2747B19000C6AB89 /* LearningProgrammingApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearningProgrammingApp.swift; sourceTree = "<group>"; };
+		914775302747B19000C6AB89 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		914775322747B19500C6AB89 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = LearningProgramming/Assets.xcassets; sourceTree = SOURCE_ROOT; };
+		914775352747B19500C6AB89 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		914775482747B45600C6AB89 /* LevelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LevelView.swift; sourceTree = "<group>"; };
+		9147754A2747B4EC00C6AB89 /* Level.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Level.swift; sourceTree = "<group>"; };
+		9147754C2747B5BB00C6AB89 /* LevelViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LevelViewModel.swift; sourceTree = "<group>"; };
+		9147754E2747B95100C6AB89 /* LessonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LessonView.swift; sourceTree = "<group>"; };
+		914775512747BA5E00C6AB89 /* GlobalThings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalThings.swift; sourceTree = "<group>"; };
+		914775532747BECA00C6AB89 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		914775542747C7EC00C6AB89 /* CodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeView.swift; sourceTree = "<group>"; };
+		9167B30B2756B67500CE03A2 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		9167B30E2757A46700CE03A2 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		9167B3102757A47700CE03A2 /* RegistrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationView.swift; sourceTree = "<group>"; };
+		9167B3122757A4C600CE03A2 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
+		9167B3142757A51600CE03A2 /* CustomSecureField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSecureField.swift; sourceTree = "<group>"; };
+		9167B3162757A87B00CE03A2 /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
+		9167B3182757A8BA00CE03A2 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		9167B31B2758C3DD00CE03A2 /* AddDataView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddDataView.swift; sourceTree = "<group>"; };
+		9167B31D2758CBCB00CE03A2 /* CustomAddDataTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAddDataTextField.swift; sourceTree = "<group>"; };
+		9167B31F2758CFC400CE03A2 /* Pickers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pickers.swift; sourceTree = "<group>"; };
+		916EAC2E274BACF500E31C6B /* BlurView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlurView.swift; sourceTree = "<group>"; };
+		9179F7FC274AD9C100E1B801 /* Lesson.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lesson.swift; sourceTree = "<group>"; };
+		9179F7FE274AD9CA00E1B801 /* TopicsArray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicsArray.swift; sourceTree = "<group>"; };
+		9179F800274AD9E800E1B801 /* Topic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Topic.swift; sourceTree = "<group>"; };
+		9179F802274ADA0600E1B801 /* Enums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enums.swift; sourceTree = "<group>"; };
+		9179F804274ADE5C00E1B801 /* MainScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreen.swift; sourceTree = "<group>"; };
+		9179F807274AE21B00E1B801 /* Sofia Pro Medium Italic Az.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Sofia Pro Medium Italic Az.otf"; sourceTree = "<group>"; };
+		9179F808274AE21B00E1B801 /* Sofia Pro Black Italic Az.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Sofia Pro Black Italic Az.otf"; sourceTree = "<group>"; };
+		9179F809274AE21B00E1B801 /* Sofia Pro Black Az.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Sofia Pro Black Az.otf"; sourceTree = "<group>"; };
+		9179F80A274AE21B00E1B801 /* Sofia Pro Bold Italic Az.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Sofia Pro Bold Italic Az.otf"; sourceTree = "<group>"; };
+		9179F80B274AE21B00E1B801 /* Sofia Pro UltraLight Italic Az.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Sofia Pro UltraLight Italic Az.otf"; sourceTree = "<group>"; };
+		9179F80C274AE21B00E1B801 /* Sofia Pro Medium Az.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Sofia Pro Medium Az.otf"; sourceTree = "<group>"; };
+		9179F80D274AE21B00E1B801 /* Sofia Pro Bold Az.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Sofia Pro Bold Az.otf"; sourceTree = "<group>"; };
+		9179F80E274AE21B00E1B801 /* Sofia Pro ExtraLight Italic Az.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Sofia Pro ExtraLight Italic Az.otf"; sourceTree = "<group>"; };
+		9179F80F274AE21B00E1B801 /* Sofia Pro Regular Italic Az.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Sofia Pro Regular Italic Az.otf"; sourceTree = "<group>"; };
+		9179F810274AE21B00E1B801 /* Sofia Pro Regular Az.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Sofia Pro Regular Az.otf"; sourceTree = "<group>"; };
+		9179F811274AE21B00E1B801 /* Sofia Pro Semi Bold Italic Az.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Sofia Pro Semi Bold Italic Az.otf"; sourceTree = "<group>"; };
+		9179F812274AE21B00E1B801 /* Sofia Pro UltraLight Az.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Sofia Pro UltraLight Az.otf"; sourceTree = "<group>"; };
+		9179F813274AE21B00E1B801 /* Sofia Pro Semi Bold Az.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Sofia Pro Semi Bold Az.otf"; sourceTree = "<group>"; };
+		9179F814274AE21B00E1B801 /* Sofia Pro ExtraLight Az.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Sofia Pro ExtraLight Az.otf"; sourceTree = "<group>"; };
+		9179F815274AE21B00E1B801 /* Sofia Pro Light Italic Az.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Sofia Pro Light Italic Az.otf"; sourceTree = "<group>"; };
+		9179F816274AE21B00E1B801 /* Sofia Pro Light Az.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Sofia Pro Light Az.otf"; sourceTree = "<group>"; };
+		9188CA96274C29A20095CCB5 /* Answer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Answer.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		914775282747B19000C6AB89 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9167B3042756B2B100CE03A2 /* FirebaseFirestoreSwift-Beta in Frameworks */,
+				9167B3002756B2B100CE03A2 /* FirebaseAuth in Frameworks */,
+				9167B3082756B2B100CE03A2 /* FirebaseMessaging in Frameworks */,
+				9167B3022756B2B100CE03A2 /* FirebaseFirestore in Frameworks */,
+				9167B3062756B2B100CE03A2 /* FirebaseFunctions in Frameworks */,
+				9167B30A2756B2B100CE03A2 /* FirebaseStorage in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		914775222747B19000C6AB89 = {
+			isa = PBXGroup;
+			children = (
+				9179F806274AE21B00E1B801 /* sofia-pro-cdnfonts */,
+				9147752D2747B19000C6AB89 /* LearningProgramming */,
+				9147752C2747B19000C6AB89 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9147752C2747B19000C6AB89 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9147752B2747B19000C6AB89 /* LearningProgramming.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9147752D2747B19000C6AB89 /* LearningProgramming */ = {
+			isa = PBXGroup;
+			children = (
+				914775532747BECA00C6AB89 /* Info.plist */,
+				9167B30B2756B67500CE03A2 /* GoogleService-Info.plist */,
+				914775502747BA4600C6AB89 /* Utils */,
+				9147753E2747B1E100C6AB89 /* ViewModel */,
+				9147753D2747B1D800C6AB89 /* Model */,
+				9147753C2747B1CF00C6AB89 /* View */,
+				9147752E2747B19000C6AB89 /* LearningProgrammingApp.swift */,
+				914775302747B19000C6AB89 /* ContentView.swift */,
+				914775322747B19500C6AB89 /* Assets.xcassets */,
+				914775342747B19500C6AB89 /* Preview Content */,
+			);
+			path = LearningProgramming;
+			sourceTree = "<group>";
+		};
+		914775342747B19500C6AB89 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				914775352747B19500C6AB89 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		9147753C2747B1CF00C6AB89 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9167B31A2758C3C900CE03A2 /* AddData */,
+				9167B30D2757A42D00CE03A2 /* Authentication */,
+				914775442747B42800C6AB89 /* Level */,
+				9147753F2747B1EB00C6AB89 /* Main */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		9147753D2747B1D800C6AB89 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9147754A2747B4EC00C6AB89 /* Level.swift */,
+				9179F7FC274AD9C100E1B801 /* Lesson.swift */,
+				9179F7FE274AD9CA00E1B801 /* TopicsArray.swift */,
+				9179F800274AD9E800E1B801 /* Topic.swift */,
+				9188CA96274C29A20095CCB5 /* Answer.swift */,
+				9167B3182757A8BA00CE03A2 /* User.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		9147753E2747B1E100C6AB89 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				9147754C2747B5BB00C6AB89 /* LevelViewModel.swift */,
+				9167B3162757A87B00CE03A2 /* AuthViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		9147753F2747B1EB00C6AB89 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				9179F804274ADE5C00E1B801 /* MainScreen.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		914775442747B42800C6AB89 /* Level */ = {
+			isa = PBXGroup;
+			children = (
+				914775482747B45600C6AB89 /* LevelView.swift */,
+				9147754E2747B95100C6AB89 /* LessonView.swift */,
+				914775542747C7EC00C6AB89 /* CodeView.swift */,
+			);
+			path = Level;
+			sourceTree = "<group>";
+		};
+		914775502747BA4600C6AB89 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				914775512747BA5E00C6AB89 /* GlobalThings.swift */,
+				9179F802274ADA0600E1B801 /* Enums.swift */,
+				916EAC2E274BACF500E31C6B /* BlurView.swift */,
+				9167B3122757A4C600CE03A2 /* CustomTextField.swift */,
+				9167B3142757A51600CE03A2 /* CustomSecureField.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		9167B30D2757A42D00CE03A2 /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				9167B30E2757A46700CE03A2 /* LoginView.swift */,
+				9167B3102757A47700CE03A2 /* RegistrationView.swift */,
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
+		9167B31A2758C3C900CE03A2 /* AddData */ = {
+			isa = PBXGroup;
+			children = (
+				9167B31D2758CBCB00CE03A2 /* CustomAddDataTextField.swift */,
+				9167B31B2758C3DD00CE03A2 /* AddDataView.swift */,
+				9167B31F2758CFC400CE03A2 /* Pickers.swift */,
+			);
+			path = AddData;
+			sourceTree = "<group>";
+		};
+		9179F806274AE21B00E1B801 /* sofia-pro-cdnfonts */ = {
+			isa = PBXGroup;
+			children = (
+				9179F807274AE21B00E1B801 /* Sofia Pro Medium Italic Az.otf */,
+				9179F808274AE21B00E1B801 /* Sofia Pro Black Italic Az.otf */,
+				9179F809274AE21B00E1B801 /* Sofia Pro Black Az.otf */,
+				9179F80A274AE21B00E1B801 /* Sofia Pro Bold Italic Az.otf */,
+				9179F80B274AE21B00E1B801 /* Sofia Pro UltraLight Italic Az.otf */,
+				9179F80C274AE21B00E1B801 /* Sofia Pro Medium Az.otf */,
+				9179F80D274AE21B00E1B801 /* Sofia Pro Bold Az.otf */,
+				9179F80E274AE21B00E1B801 /* Sofia Pro ExtraLight Italic Az.otf */,
+				9179F80F274AE21B00E1B801 /* Sofia Pro Regular Italic Az.otf */,
+				9179F810274AE21B00E1B801 /* Sofia Pro Regular Az.otf */,
+				9179F811274AE21B00E1B801 /* Sofia Pro Semi Bold Italic Az.otf */,
+				9179F812274AE21B00E1B801 /* Sofia Pro UltraLight Az.otf */,
+				9179F813274AE21B00E1B801 /* Sofia Pro Semi Bold Az.otf */,
+				9179F814274AE21B00E1B801 /* Sofia Pro ExtraLight Az.otf */,
+				9179F815274AE21B00E1B801 /* Sofia Pro Light Italic Az.otf */,
+				9179F816274AE21B00E1B801 /* Sofia Pro Light Az.otf */,
+			);
+			path = "sofia-pro-cdnfonts";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9147752A2747B19000C6AB89 /* LearningProgramming */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 914775392747B19500C6AB89 /* Build configuration list for PBXNativeTarget "LearningProgramming" */;
+			buildPhases = (
+				914775272747B19000C6AB89 /* Sources */,
+				914775282747B19000C6AB89 /* Frameworks */,
+				914775292747B19000C6AB89 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LearningProgramming;
+			packageProductDependencies = (
+				9167B2FF2756B2B100CE03A2 /* FirebaseAuth */,
+				9167B3012756B2B100CE03A2 /* FirebaseFirestore */,
+				9167B3032756B2B100CE03A2 /* FirebaseFirestoreSwift-Beta */,
+				9167B3052756B2B100CE03A2 /* FirebaseFunctions */,
+				9167B3072756B2B100CE03A2 /* FirebaseMessaging */,
+				9167B3092756B2B100CE03A2 /* FirebaseStorage */,
+			);
+			productName = LearningProgramming;
+			productReference = 9147752B2747B19000C6AB89 /* LearningProgramming.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		914775232747B19000C6AB89 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1310;
+				LastUpgradeCheck = 1310;
+				TargetAttributes = {
+					9147752A2747B19000C6AB89 = {
+						CreatedOnToolsVersion = 13.1;
+					};
+				};
+			};
+			buildConfigurationList = 914775262747B19000C6AB89 /* Build configuration list for PBXProject "LearningProgramming" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 914775222747B19000C6AB89;
+			packageReferences = (
+				9167B2FE2756B2B100CE03A2 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
+			productRefGroup = 9147752C2747B19000C6AB89 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9147752A2747B19000C6AB89 /* LearningProgramming */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		914775292747B19000C6AB89 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9179F81F274AE21B00E1B801 /* Sofia Pro Regular Italic Az.otf in Resources */,
+				9179F826274AE21B00E1B801 /* Sofia Pro Light Az.otf in Resources */,
+				9179F817274AE21B00E1B801 /* Sofia Pro Medium Italic Az.otf in Resources */,
+				9179F81E274AE21B00E1B801 /* Sofia Pro ExtraLight Italic Az.otf in Resources */,
+				9179F820274AE21B00E1B801 /* Sofia Pro Regular Az.otf in Resources */,
+				9179F81B274AE21B00E1B801 /* Sofia Pro UltraLight Italic Az.otf in Resources */,
+				9179F825274AE21B00E1B801 /* Sofia Pro Light Italic Az.otf in Resources */,
+				9179F818274AE21B00E1B801 /* Sofia Pro Black Italic Az.otf in Resources */,
+				9179F823274AE21B00E1B801 /* Sofia Pro Semi Bold Az.otf in Resources */,
+				9167B30C2756B67500CE03A2 /* GoogleService-Info.plist in Resources */,
+				9179F819274AE21B00E1B801 /* Sofia Pro Black Az.otf in Resources */,
+				9179F821274AE21B00E1B801 /* Sofia Pro Semi Bold Italic Az.otf in Resources */,
+				914775362747B19500C6AB89 /* Preview Assets.xcassets in Resources */,
+				9179F81C274AE21B00E1B801 /* Sofia Pro Medium Az.otf in Resources */,
+				9179F81A274AE21B00E1B801 /* Sofia Pro Bold Italic Az.otf in Resources */,
+				9179F824274AE21B00E1B801 /* Sofia Pro ExtraLight Az.otf in Resources */,
+				9179F81D274AE21B00E1B801 /* Sofia Pro Bold Az.otf in Resources */,
+				9179F822274AE21B00E1B801 /* Sofia Pro UltraLight Az.otf in Resources */,
+				914775332747B19500C6AB89 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		914775272747B19000C6AB89 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9167B3172757A87B00CE03A2 /* AuthViewModel.swift in Sources */,
+				914775552747C7EC00C6AB89 /* CodeView.swift in Sources */,
+				9167B3152757A51600CE03A2 /* CustomSecureField.swift in Sources */,
+				916EAC2F274BACF500E31C6B /* BlurView.swift in Sources */,
+				9147754F2747B95100C6AB89 /* LessonView.swift in Sources */,
+				9179F805274ADE5C00E1B801 /* MainScreen.swift in Sources */,
+				9167B31E2758CBCB00CE03A2 /* CustomAddDataTextField.swift in Sources */,
+				9147754B2747B4EC00C6AB89 /* Level.swift in Sources */,
+				9167B3112757A47700CE03A2 /* RegistrationView.swift in Sources */,
+				9179F803274ADA0600E1B801 /* Enums.swift in Sources */,
+				914775522747BA5E00C6AB89 /* GlobalThings.swift in Sources */,
+				9167B3132757A4C600CE03A2 /* CustomTextField.swift in Sources */,
+				9147754D2747B5BB00C6AB89 /* LevelViewModel.swift in Sources */,
+				914775312747B19000C6AB89 /* ContentView.swift in Sources */,
+				914775492747B45600C6AB89 /* LevelView.swift in Sources */,
+				9179F801274AD9E800E1B801 /* Topic.swift in Sources */,
+				9179F7FF274AD9CA00E1B801 /* TopicsArray.swift in Sources */,
+				9147752F2747B19000C6AB89 /* LearningProgrammingApp.swift in Sources */,
+				9188CA97274C29A30095CCB5 /* Answer.swift in Sources */,
+				9167B3202758CFC400CE03A2 /* Pickers.swift in Sources */,
+				9167B30F2757A46700CE03A2 /* LoginView.swift in Sources */,
+				9179F7FD274AD9C100E1B801 /* Lesson.swift in Sources */,
+				9167B31C2758C3DD00CE03A2 /* AddDataView.swift in Sources */,
+				9167B3192757A8BA00CE03A2 /* User.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		914775372747B19500C6AB89 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		914775382747B19500C6AB89 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9147753A2747B19500C6AB89 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"LearningProgramming/Preview Content\"";
+				DEVELOPMENT_TEAM = 6P75B5J3ZY;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = LearningProgramming/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Zrozum.IT;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Kosciol-filadelfia.LearningProgramming";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9147753B2747B19500C6AB89 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"LearningProgramming/Preview Content\"";
+				DEVELOPMENT_TEAM = 6P75B5J3ZY;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = LearningProgramming/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Zrozum.IT;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Kosciol-filadelfia.LearningProgramming";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		914775262747B19000C6AB89 /* Build configuration list for PBXProject "LearningProgramming" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				914775372747B19500C6AB89 /* Debug */,
+				914775382747B19500C6AB89 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		914775392747B19500C6AB89 /* Build configuration list for PBXNativeTarget "LearningProgramming" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9147753A2747B19500C6AB89 /* Debug */,
+				9147753B2747B19500C6AB89 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		9167B2FE2756B2B100CE03A2 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 8.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		9167B2FF2756B2B100CE03A2 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9167B2FE2756B2B100CE03A2 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		9167B3012756B2B100CE03A2 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9167B2FE2756B2B100CE03A2 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		9167B3032756B2B100CE03A2 /* FirebaseFirestoreSwift-Beta */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9167B2FE2756B2B100CE03A2 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseFirestoreSwift-Beta";
+		};
+		9167B3052756B2B100CE03A2 /* FirebaseFunctions */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9167B2FE2756B2B100CE03A2 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFunctions;
+		};
+		9167B3072756B2B100CE03A2 /* FirebaseMessaging */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9167B2FE2756B2B100CE03A2 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseMessaging;
+		};
+		9167B3092756B2B100CE03A2 /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9167B2FE2756B2B100CE03A2 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 914775232747B19000C6AB89 /* Project object */;
+}
